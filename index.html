@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutri Time - Salud + Alimentación</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fredoka:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                teal: '#7bc9c6' /* Color principal del logo */,
+                orange: '#eb8a65' /* Acentos */,
+                green: '#9ec668' /* Hojas */,
+                dark: '#2d3748',
+              },
+              lime: {
+                400: '#9ec668',
+                500: '#8ab356',
+                600: '#759944',
+              },
+              coral: {
+                400: '#f29b7c',
+                500: '#eb8a65',
+                600: '#d16f4a',
+              },
+              mint: {
+                100: '#f0f9f9',
+                500: '#7bc9c6',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Fredoka', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html,
+      body {
+        overflow-x: hidden; /* Corta cualquier cosa que se salga a los lados */
+        width: 100%; /* Asegura que no sea más ancho que la ventana */
+        max-width: 100%; /* Doble seguridad */
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Barra de desplazamiento personalizada */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
