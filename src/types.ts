@@ -12,12 +12,7 @@ export interface MealPlanResponse {
   meals: Meal[];
 }
 
-export enum LoadingState {
-  IDLE = 'IDLE',
-  LOADING = 'LOADING',
-  SUCCESS = 'SUCCESS',
-  ERROR = 'ERROR',
-}
+export type LoadingState = 'IDLE' | 'LOADING' | 'SUCCESS' | 'ERROR';
 
 export interface NavItem {
   label: string;

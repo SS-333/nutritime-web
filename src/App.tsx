@@ -1,5 +1,3 @@
-import React from 'react';
-
 // 1. IMPORTAMOS LOS COMPONENTES
 // Usamos llaves { } porque los definimos como "export const" en cada archivo
 import { Header } from './components/Header';
