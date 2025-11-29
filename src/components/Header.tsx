@@ -73,15 +73,16 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* LOGO CON TU ENLACE QUE FUNCIONA */}
-        <a
-          href="#"
-          className="block w-48 min-w-[150px] overflow-visible shrink-0 group"
-        >
+        <a href="#" className="flex items-center gap-3 group no-underline">
           <img
             src="https://i.postimg.cc/pXfRmPjY/logo.png"
             alt="Nutri Time Logo"
             className="w-full h-auto max-h-20 object-contain object-left block transition-transform group-hover:scale-105"
           />
+          {/* 2. Texto con el MISMO EFECTO que "Libera tu Tiempo" */}
+          <span className="text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-coral-500 whitespace-nowrap pb-2">
+            NUTRI TIME
+          </span>
         </a>
 
         {/* MENÚ ESCRITORIO */}
